@@ -18,8 +18,10 @@ p {
 }
 
 p.body-start {
-	font-size: 30px;
+	font-size: 3rem;
+	text-decoration: bold;
 	font-family: arial;
+}
 
 p.text1	{
 	color: black;
