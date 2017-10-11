@@ -2,25 +2,73 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="CSS.css">
+		<title>Continental Home</title>
 	</head>
 	<body>
 		<header>
 			<center>
 				<h1 style="text-align: center; font-size: 3rem">The Continental Congress</h1>
+				<img src="Images/Congress.jpg" alt="Continental Congress GOES HERE!!!" height="240" width="480"/>
 			</center>
+			
 		</header>
 		<ul class="head">
 			<li><a href="ContinentalHome.html">Home</a></li>
 			<li><a href="ListOfDelegates.html">List of Delegates</a></li>
-			<li><a href="Location.html">Location</a></li>
+			<li><a class="active" href="Location.html">Location</a></li>
 			<li class="dropdown">
-					<a href="#" class="dropbtn">Most Prominent Figures</a>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+				<a href="#" class="dropbtn">Most Prominent Figures</a>
+				<div class="dropdown-content">
+					<div class="tab">
+						<button class="tablinks" onclick="openDelegate(event, 'George')">George Washington</button>
+						<button class="tablinks" onclick="openDelegate(event, 'JohnA')">John Adams</button>
+						<button class="tablinks" onclick="openDelegate(event, 'SamA')">Samuel Adams</button>
+						<button class="tablinks" onclick="openDelegate(event, 'PatrickH')">Patrick Henry</button>
 					</div>
-			<li><a href="Contact.html">Contact</a></li>
+					<div id="George" class="tabcontent">
+						<center><div class="blandwtonotblandw"><img src="Images/George.jpg"/></div></center>
+						<h3>George Washington</h3>
+						<p>1st president of the united states of america</p>
+					</div>
+					<div id="JohnA" class="tabcontent">
+						<center><div class="blandwtonotblandw"><img src="Images/JohnA.jpg" width="250" height="300"/></div></center>
+						<h3>John Adams</h3>
+						<p>He did a thing in nam</p> 
+					</div>
+					<div id="SamA" class="tabcontent">
+						<center><div class="blandwtonotblandw"><img src="Images/SamA.jpg"/></div></center>
+						<h3>Samuel Adams</h3>
+						<p>Tarred and feathered many</p>
+					</div>
+					<div id="PatrickH" class="tabcontent">
+						<center><div class="blandwtonotblandw"><img src="Images/PatrickH.jpg"/></div></center>
+						<h3>Patrick Henry</h3>
+						<p>He wrote the first american sentence</p>
+					</div>
+					<script>
+						function openDelegate(evt, delegateName) {
+							var i, tabcontent, tablinks;
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							}
+							tablinks = document.getElementsByClassName("tablinks");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							}
+							document.getElementById(delegateName).style.display = "block";
+							evt.currentTarget.className += " active";
+						}
+					</script>
+				</div>
+			</li>
+			<li><a href="WCited.html">Works Cited Page</a></li>
+			<li><a href="Contact.html">Contact Me</a>
 		</ul>
 	</body>
+	<footer>
+		<center>
+			<p class="foot">This page was created by <a href="Contact.html">Trevor Galvez</a></p>
+		</center>
+	</footer>
 </html>
