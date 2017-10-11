@@ -17,6 +17,10 @@ p {
   font-family: arial;
 }
 
+p.body-start {
+	font-size: 30px;
+	font-family: arial;
+
 p.text1	{
 	color: black;
 	font-size: 20px;
