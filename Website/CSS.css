@@ -29,6 +29,10 @@ p.text1	{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+p.serif {
+	font-family: "Times New Roman", Times, serif;
+}
+
 ul.head li {
     display: inline-block;
 }
