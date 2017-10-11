@@ -1,7 +1,7 @@
 ul.head	{
 	list-style-type: none;
-    margin: 0px;
-	padding = 0px;
+    margin: 25px;
+    padding: 0px;
     overflow: hidden;
     background-color: #000080;
 }
@@ -25,8 +25,9 @@ li {
     float: left;
 }
 
-.active {
-	background-color: #000059;
+.active
+{
+	background-color: #0000660;
 }
 
 li a, .dropbtn {
@@ -39,6 +40,9 @@ li a, .dropbtn {
 
 li a:hover, .dropdown:hover .dropbtn {
     background-color: red;
+    animation-name: rainbow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 li.dropdown {
@@ -77,7 +81,6 @@ li.dropdown {
   background-color: #f9f9f9;
   text-align: center;
   font-family: Arial;
-  z-index: 4;
 }
 
 .foot a {
@@ -133,7 +136,6 @@ div.tab button.active {
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
 	font-family: arial;
-	z-index: 5;
 }
 
 /* Fade in tabs */
@@ -145,6 +147,22 @@ div.tab button.active {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+div.blandwtonotblandw
+{
+	filter: grayscale(100%);
+}
+
+div.blandwtonotblandw:hover
+{
+	animation: otherFade 2s;
+	filter: none;
+}
+
+@keyframes otherFade {
+	from{filter: grayscale(100%);}
+	to {filter: none;)
 }
 
 	
