@@ -166,9 +166,15 @@ div.blandwtonotblandw:hover
 	to {filter: none;)
 }
 
+div.main-body h2, p {
+	font-family: arial;
+}
 	
-	
-	
+div.main-body {
+	background-color: #ecdcb3;
+	width: 300px;
+	padding: 10px;
+}
 	
 	
 	
