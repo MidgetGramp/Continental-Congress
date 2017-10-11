@@ -14,6 +14,7 @@ a {
 p {
   color: black;
   font-size: 16px;
+  font-family: arial;
 }
 
 p.text1	{
@@ -166,9 +167,6 @@ div.blandwtonotblandw:hover
 	to {filter: none;)
 }
 
-article {
-	font-family: arial;
-}
 	
 	
 	
