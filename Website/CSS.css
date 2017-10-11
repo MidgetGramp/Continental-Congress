@@ -4,6 +4,7 @@ ul.head	{
     padding: 0px;
     overflow: hidden;
     background-color: #000080;
+    text-align: center;
 }
 
 a {
@@ -21,8 +22,8 @@ p.text1	{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-li {
-    float: left;
+ul.head li {
+    display: inline-block;
 }
 
 a.active
