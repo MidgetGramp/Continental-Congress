@@ -25,9 +25,9 @@ li {
     float: left;
 }
 
-.active
+a.active
 {
-	background-color: #0000660;
+	background-color: #00000cd;
 }
 
 li a, .dropbtn {
