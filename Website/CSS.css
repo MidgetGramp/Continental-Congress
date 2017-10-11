@@ -178,10 +178,7 @@ div.blandwtonotblandw:hover
 }
 
 article {
-    margin-left: 170px;
-    border-left: 2px solid gray;
-    padding: 2em;
-    overflow: hidden;
+    text-align: center;
     font-family: arial;
 }
 	
