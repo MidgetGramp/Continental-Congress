@@ -169,9 +169,10 @@ div.blandwtonotblandw:hover
 
 article {
     margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
+    border-left: 2px solid gray;
+    padding: 2em;
     overflow: hidden;
+    font-family: arial;
 }
 	
 	
