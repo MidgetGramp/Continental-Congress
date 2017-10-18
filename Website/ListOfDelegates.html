@@ -16,59 +16,147 @@
 			<li><a href="ContinentalHome.html">Home</a></li>
 			<li><a class="active" href="ListOfDelegates.html">List of Delegates</a></li>
 			<li><a href="Location.html">Location</a></li>
-			<li class="dropdown">
-				<a href="#" class="dropbtn">Most Prominent Figures</a>
-				<div class="dropdown-content">
-					<div class="tab">
-						<button class="tablinks" onclick="openDelegate(event, 'George')">George Washington</button>
-						<button class="tablinks" onclick="openDelegate(event, 'JohnA')">John Adams</button>
-						<button class="tablinks" onclick="openDelegate(event, 'SamA')">Samuel Adams</button>
-						<button class="tablinks" onclick="openDelegate(event, 'PatrickH')">Patrick Henry</button>
-					</div>
-					<div id="George" class="tabcontent">
-						<center><div class="blandwtonotblandw"><img src="Images/George.jpg"/></div></center>
-						<h3>George Washington</h3>
-						<p>1st president of the United States of America</p>
-					</div>
-					<div id="JohnA" class="tabcontent">
-						<center><div class="blandwtonotblandw"><img src="Images/JohnA.jpg" width="250" height="300"/></div></center>
-						<h3>John Adams</h3>
-						<p>One of the most influential men in the Continental Congress</p> 
-					</div>
-					<div id="SamA" class="tabcontent">
-						<center><div class="blandwtonotblandw"><img src="Images/SamA.jpg"/></div></center>
-						<h3>Samuel Adams</h3>
-						<p>A cousin to John Adams. Lead the Sons/Daughters of Liberty and attempted to make a business with alchoholic beverages.</p>
-					</div>
-					<div id="PatrickH" class="tabcontent">
-						<center><div class="blandwtonotblandw"><img src="Images/PatrickH.jpg"/></div></center>
-						<h3>Patrick Henry</h3>
-						<p>That one guy who stated, "Give me liberty, or give me death!</p>
-					</div>
-					<script>
-						function openDelegate(evt, delegateName) {
-							var i, tabcontent, tablinks;
-							tabcontent = document.getElementsByClassName("tabcontent");
-							for (i = 0; i < tabcontent.length; i++) {
-								tabcontent[i].style.display = "none";
-							}
-							tablinks = document.getElementsByClassName("tablinks");
-							for (i = 0; i < tablinks.length; i++) {
-								tablinks[i].className = tablinks[i].className.replace(" active", "");
-							}
-							document.getElementById(delegateName).style.display = "block";
-							evt.currentTarget.className += " active";
-						}
-					</script>
-				</div>
-			</li>
 			<li><a href="WCited.html">Works Cited Page</a></li>
 			<li><a href="Contact.html">Contact Me</a>
 		</ul>
+		<div class="sidenav">
+			<a href="#" class="sidetab-heading">Connecticut Delegates</a>
+			<ul class="sidetab-content">
+				<li>Eliphalet Dyer</li>
+				<li>Roger Sherman</li>
+				<li>Silas Deane</li>
+				<li>Samuel Huntington</li>
+				<li>William Williams</li>
+				<li>Oliver Wolcott</li>
+				<li>Charles Carroll</li>
+				<li>Samuel Chase</li>
+				<li>Thomas Stone</li>
+				<li>William Paca</li>
+			</ul>
+			<a href="#" class="sidetab-heading">Delaware Delegates</a>
+			<ul class="sidetab-content">
+				<li>Caesar Rodney</li>
+				<li>Thomas McKean</li>
+				<li>George Read</li>
+			</ul>
+			<a href="#" class="sidetab-heading">Maryland Delegates</a>
+			<ul class="sidetab-content">
+				<li>Matthew Tilghman</li>
+				<li>Thomas Johnson</li>
+				<li>William Paca</li>
+				<li>Samuel Chase</li>
+				<li>Robert Goldsborough</li>
+			</ul>
+			<a href="#" class="sidetab-heading">Massachusetts Bay Delegates</a>
+			<ul class="sidetab-content">
+				<li class="Prominent-Figure">Samuel Adams</li>
+				<li class="Prominent-Figure">John Adams</li>
+				<li>John Hancock</li>
+				<li>Thomas Cushing</li>
+				<li>Robert Treat Paine</li>
+				<li>Elbridge Gerry</li>
+			</ul>
+			<a href="#" class="sidetab-heading">New Hampshire Delegates</a>
+			<ul class="sidetab-content">
+				<li>John Sullivan</li>
+				<li>Nathanial Folsom</li>
+				<li>Josiah Bartlett</li>
+				<li>William Whipple</li>
+				<li>Matthew Thornton</li>
+			</ul>
+			<a href="#" class="sidetab-heading">New Jersey Delegates</a>
+			<ul class="sidetab-content">
+				<li>James Kimsey</li>
+				<li>Abraham Clark</li>
+				<li>John Hart</li>
+				<li>Francis Hopkins</li>
+				<li>Richard Stockton</li>
+				<li>John Witherspoon</li>
+				<li>William Livingston</li>
+				<li>Stephen Crane</li>
+				<li>Richard Smith</li>
+				<li>John De Hart</li>
+			</ul>
+			<a href="#" class="sidetab-heading">New York Delegates</a>
+			<ul class="sidetab-content">
+				<li>Isaac Low</li>
+				<li>John Alsop</li>
+				<li>John Jay</li>
+				<li>Philip Livingston</li>
+				<li>James Duane</li>
+				<li>William Floyd</li>
+				<li>Henry Wisner</li>
+				<li>Simon Boerum</li>
+				<li>Lewis Morris</li>
+				<li>Francis Lewis</li>
+			</ul>
+			<a href="#" class="sidetab-heading">North Carolina Delegates</a>
+			<ul class="sidetab-content">
+				<li>William Hooper</li>
+				<li>John Penn</li>
+				<li>Joseph Hewes</li>
+				<li>Richard Caswell</li>
+			</ul>
+			<a href="#" class="sidetab-heading">Pennsylvania Delegates</a>
+			<ul class="sidetab-content">
+				<li>Joseph Galloway</li>
+				<li>John Dickinson</li>
+				<li>Charles Humphreys</li>
+				<li>Thomas Mifffin</li>
+				<li>Edward Biddle</li>
+				<li>John Morton</li>
+				<li>George Ross</li>
+				<li>George Clymer</li>
+				<li class="Prominent-Figure">Benjamin Franklin</li>
+				<li>Robert Morris</li>
+				<li>Benjamin Rush</li>
+				<li>James Smith</li>
+				<li>James Wilson</li>
+				<li>George Taylor</li>
+			</ul>
+			<a href="#" class="sidetab-heading">Rhode Island Delegates</a>
+			<ul class="sidetab-content">
+				<li>Stephen Hopkins</li>
+				<li>Samuel Ward</li>
+				<li>William Ellery</li>
+			</ul>
+			<a href="#" class="sidetab-heading">South Carolina Delegates</a>
+			<ul class="sidetab-content">
+				<li>Henry Middleton</li>
+				<li>Arthur Middleton</li>
+				<li>Thomas Lynch Jr.</li>
+				<li>Thomas Heyward, Jr.</li>
+				<li>Christopher Gradsden</li>
+				<li>John Rutledge</li>
+				<li>Edward Rutledge</li>
+			</ul>
+			<a href="#" class="sidetab-heading">Virginia Delegates</a>
+			<ul class="sidetab-content">
+				<li>Peyton Randolf</li>
+				<li>Richard Henry Lee</li>
+				<li class="Prominent-Figure">George Washington</li>
+				<li class="Prominent-Figure">Patrick Henry</li>
+				<li>Richard Bland</li>
+				<li>Benjamin Harrison</li>
+				<li>Edmund Pendleton</li>
+				<li>Francis Lightfoot Lee</li>
+				<li>Carter Braxton</li>
+				<li class="Prominent-Figure">Thomas Jefferson</li>
+				<li>George Wythe</li>
+				<li>Thomas Nelson, Jr.</li>
+			</ul>
+			<a href="#" class="sidetab-dropdown">Georgia Delegates</a>
+			<ul class="sidetab-content">
+				<li>Button Gwinnett</li>
+				<li>Lyman Hall</li>
+				<li>George Walton</li>
+			</ul>
+		</div>
+		<h3>Use the following <a href="http://bioguide.congress.gov/biosearch/biosearch.asp" target="_blank">website</a> to search for the delegate you are most interested in.</h3>
 	</body>
 	<footer>
 		<center>
 			<p class="foot">This page was created by <a href="Contact.html">Trevor Galvez</a></p>
 		</center>
 	</footer>
-</html>
+</html
